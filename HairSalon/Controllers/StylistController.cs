@@ -78,7 +78,7 @@ namespace HairSalon.Controllers
       return View(model);
     }
     [HttpGet("/clients/new")]
-    public ActionResult CreateForm()
+    public ActionResult CreateClientList()
     {
       List<Stylist> listStylists = Stylist.GetAll();
       if(listStylists.Count > 0)
@@ -92,7 +92,7 @@ namespace HairSalon.Controllers
       }
     }
     [HttpPost("/clients")]
-    public ActionResult Create()
+    public ActionResult CreateNewClient()
     {
       Client newClient = new Client (Request.Form["newClient"], int.Parse(Request.Form["stylistId"]));
       newClient.Save();
