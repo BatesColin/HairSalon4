@@ -1,0 +1,17 @@
+<h1>Clients</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+  @foreach(var client in Model)
+  {
+  <tr>
+    <td>@client.GetClientName()</td>
+    <td><a href="/clients/@client.GetClientId()/update">Edit</a></td>
+    <td><a href="/clients/@client.GetClientId()/delete">Delete</a></td>
+  </tr>
+  }
+</table>
+<p><a href='/'>Back to Home<a/></p>
