@@ -66,9 +66,10 @@ namespace HairSalon.Controllers
       Dictionary<string, object> model = new Dictionary<string, object>();
       Stylist selectedStylist = Stylist.Find(id);
       List<Client> selectedClients = Client.GetClientsById(id);
-      List<Specialty> selectedSpecialties = selectedStylist.GetSpecialties();
+      List<Specialty> selectedSpecialties = selectedStylist.AddSpecialty();
       List<Specialty> allSpecialties = Specialty.GetAll();
       List<Client> allClients = Client.GetAll();
+
       model.Add("allClients", allClients);
       model.Add("allSpecialties", allSpecialties);
       model.Add("selectedSpecialties", selectedSpecialties);

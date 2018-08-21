@@ -2,3 +2,7 @@
 /Users/Guest/Desktop/HairSalon.solutions/HairSalon/bin/Debug/netcoreapp1.1/HairSalon.runtimeconfig.json
 /Users/Guest/Desktop/HairSalon.solutions/HairSalon/bin/Debug/netcoreapp1.1/HairSalon.runtimeconfig.dev.json
 /Users/Guest/Desktop/HairSalon.solutions/HairSalon/obj/Debug/netcoreapp1.1/HairSalon.AssemblyInfo.cs
+C:\Users\Bates\desktop\HairSalon4\HairSalon\obj\Debug\netcoreapp1.1\HairSalon.csprojAssemblyReference.cache
+C:\Users\Bates\desktop\HairSalon4\HairSalon\obj\Debug\netcoreapp1.1\HairSalon.csproj.CoreCompileInputs.cache
+C:\Users\Bates\desktop\HairSalon4\HairSalon\obj\Debug\netcoreapp1.1\HairSalon.AssemblyInfoInputs.cache
+C:\Users\Bates\desktop\HairSalon4\HairSalon\obj\Debug\netcoreapp1.1\HairSalon.AssemblyInfo.cs
