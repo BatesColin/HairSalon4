@@ -210,7 +210,6 @@ namespace HairSalon.Models
 
       List<Specialty> specialties = new List<Specialty> {};
       foreach (int specialtyId in specialtyIds)
-      {
         var specialtyQuery = conn.CreateCommand() as MySqlCommand;
         specialtyQuery.CommandText = @"SELECT * FROM specialties WHERE id = @SpecialtyId;";
 
