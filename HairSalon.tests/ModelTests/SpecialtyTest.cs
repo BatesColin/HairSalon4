@@ -2,15 +2,16 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System;
 using HairSalon.Models;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-
-
+namespace HairSalon.Tests
+{
   [TestClass]
   public class SpecialtyTests : IDisposable
   {
     public SpecialtyTests()
     {
-        DBConfiguration.ConnectionString = "server=localhost;user id=root;password=root;port=8889;database=nick_rogers_test;";
+        DBConfiguration.ConnectionString = "server=localhost;user id=root;password=root;port=8889;database=colin_bates_test;";
     }
     public void Dispose()
     {
@@ -92,3 +93,4 @@ using HairSalon.Models;
       CollectionAssert.AreEqual(expectedResult, result);
     }
   }
+}

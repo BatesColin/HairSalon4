@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System;
 using HairSalon.Models;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HairSalon.Tests
 {

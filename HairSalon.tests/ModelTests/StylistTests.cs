@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System;
 using HairSalon.Models;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace HairSalon.Tests
 {
@@ -11,6 +12,10 @@ namespace HairSalon.Tests
     public StylistTests()
     {
         DBConfiguration.ConnectionString = "server=localhost;user id=root;password=root;port=8889;database=nick_rogers_test;";
+    }
+        public void Dispose()
+    {
+      Stylist.DeleteAll();
     }
     //create
     [TestMethod]
@@ -38,8 +43,8 @@ namespace HairSalon.Tests
      //Act
      Stylist savedStylist = Stylist.GetAll()[0];
 
-     int result = savedStylist.GetId();
-     int testId = testStylist.GetId();
+     int result = savedStylist.GetStylistId();
+     int testId = testStylist.GetStylistId();
 
      //Assert
      Assert.AreEqual(testId, result);
@@ -53,7 +58,7 @@ namespace HairSalon.Tests
      testStylist.Save();
 
      //Act
-     Stylist foundStylist = Stylist.Find(testStylist.GetId());
+     Stylist foundStylist = Stylist.Find(testStylist.GetStylistId());
 
      //Assert
      Assert.AreEqual(testStylist, foundStylist);
@@ -73,7 +78,7 @@ namespace HairSalon.Tests
      testStylist.AddSpecialty(testSpecialty);
      testStylist.Delete();
 
-     List<Stylist> resultSpecialtyCategories = testSpecialty.GetCategories();
+     List<Stylist> resultSpecialtyCategories = Stylist.GetAll();
      List<Stylist> testSpecialtyCategories = new List<Stylist> {};
 
      //Assert

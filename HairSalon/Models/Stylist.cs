@@ -186,7 +186,7 @@ namespace HairSalon.Models
         conn.Dispose();
       }
     }
-    public List<Specialty> GetCategories()
+    public List<Specialty> GetSpecialties()
     {
       MySqlConnection conn = DB.Connection();
       conn.Open();
@@ -209,7 +209,7 @@ namespace HairSalon.Models
       rdr.Dispose();
 
       List<Specialty> specialties = new List<Specialty> {};
-      foreach (int specialtyId in specialtyIds)
+      foreach (int specialtyId in specialtyIds){
         var specialtyQuery = conn.CreateCommand() as MySqlCommand;
         specialtyQuery.CommandText = @"SELECT * FROM specialties WHERE id = @SpecialtyId;";
 
