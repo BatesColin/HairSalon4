@@ -1,0 +1,19 @@
+<h1>Stylists</h1>
+<p><a href='/stylists/new'>Add a New Stylist</a></p>
+<hr/>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+  @foreach(var stylist in Model)
+  {
+  <tr>
+    <td><a href="/stylists/@stylist.GetStylistId()">@stylist.GetStylistName()</a></td>
+    <td><a href="/stylists/@stylist.GetStylistId()/update">Edit</a></td>
+    <td><a href="/stylists/@stylist.GetStylistId()/delete">Delete</a></td>
+  </tr>
+  }
+</table>
+<p><a href='/'>Back to Home</a></p>

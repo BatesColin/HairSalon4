@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System;
 using HairSalon.Controllers;
+using HairSalon.Models;
 
 namespace HairSalon.Tests
 {

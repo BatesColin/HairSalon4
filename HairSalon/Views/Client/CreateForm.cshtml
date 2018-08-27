@@ -3,13 +3,11 @@
   <label for="newClient">Add a new client</label>
   <input id="newClient" name="newClient" type="text">
   <select class="form-control" id="stylist" name="stylistId">
-      @{System.Diagnostics.Debug.WriteLine(Model);}
-    @foreach(var category in Model)
-
+    @foreach(var category in model)
     {
       <option value="@category.GetStylistId()">@category.GetStylistName()</option>
     }
-
   </select>
   <button type="submit">Submit</button>
 </form>
+<p><a href='/clients'>Back to List</a></p>

@@ -1,4 +1,0 @@
-C:\Users\Bates\desktop\HairSalon4\HairSalon.tests\obj\Debug\netcoreapp1.1\HairSalonTests.csprojAssemblyReference.cache
-C:\Users\Bates\desktop\HairSalon4\HairSalon.tests\obj\Debug\netcoreapp1.1\HairSalonTests.csproj.CoreCompileInputs.cache
-C:\Users\Bates\desktop\HairSalon4\HairSalon.tests\obj\Debug\netcoreapp1.1\HairSalonTests.AssemblyInfoInputs.cache
-C:\Users\Bates\desktop\HairSalon4\HairSalon.tests\obj\Debug\netcoreapp1.1\HairSalonTests.AssemblyInfo.cs

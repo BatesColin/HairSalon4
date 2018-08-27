@@ -1,0 +1,7 @@
+<h1>Update Specialty</h1>
+<form action="/specialties/@Model.GetSpecialtyId()/update" method="post">
+  <label for="updateSpecialty">Update specialty name:</label>
+  <input id="updateSpecialty" name="updateSpecialty" type="text" value="@Model.GetSpecialtyName()">
+  <button type="submit">Submit</button>
+</form>
+<p><a href='/stylists'>Back to List</a></p>
