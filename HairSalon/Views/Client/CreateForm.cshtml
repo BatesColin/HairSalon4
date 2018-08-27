@@ -1,0 +1,15 @@
+<h1>Luckiest people alive!</h1>
+<form action="/clients" method="post">
+  <label for="newClient">Add a new client</label>
+  <input id="newClient" name="newClient" type="text">
+  <select class="form-control" id="stylist" name="stylistId">
+      @{System.Diagnostics.Debug.WriteLine(Model);}
+    @foreach(var category in Model)
+
+    {
+      <option value="@category.GetStylistId()">@category.GetStylistName()</option>
+    }
+
+  </select>
+  <button type="submit">Submit</button>
+</form>
